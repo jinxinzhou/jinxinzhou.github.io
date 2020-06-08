@@ -1,28 +1,300 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<head>
+    <title>Thomas E. Huang</title>
+    <!--
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    MMMMMMMM             MMMMMMMMMMMMMMMMM             MMMMMMMMM
+    MMMMMMMM              MMMMMMMMMMMMMMM              MMMMMMMMM
+    MMMMMMMM                MMMMMMMMMMM                MMMMMMMMM
+    MMMMMMMM                 MMMMMMMMM                 MMMMMMMMM
+    MMMMMMMM                  MMMMMMM                  MMMMMMMMM
+    MMMMMMMMMMMM               MMMMM                MMMMMMMMMMMM
+    MMMMMMMMMMMM                MMM                 MMMMMMMMMMMM
+    MMMMMMMMMMMM                 V                  MMMMMMMMMMMM
+    MMMMMMMMMMMM                                    MMMMMMMMMMMM
+    MMMMMMMMMMMM         ^               ^          MMMMMMMMMMMM
+    MMMMMMMMMMMM         MM             MM          MMMMMMMMMMMM
+    MMMMMMMMMMMM         MMMM         MMMM          MMMMMMMMMMMM
+    MMMMMMMMMMMM         MMMMM       MMMMM          MMMMMMMMMMMM
+    MMMMMMMMMMMM         MMMMMM     MMMMMM          MMMMMMMMMMMM
+    MMMMMMMM                MMMM   MMMM                MMMMMMMMM
+    MMMMMMMM                MMMMMVMMMMM                MMMMMMMMM
+    MMMMMMMM                MMMMMMMMMMM                MMMMMMMMM
+    MMMMMMMM                MMMMMMMMMMM                MMMMMMMMM
+    MMMMMMMM                MMMMMMMMMMM                MMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <!-- <h2>Contact Info and Links</h2> -->
+    <div>
+        <div id="pic_div">
+            <img src="static/me_lowres.png" alt="Me" id="pic">
+            <i id="pic_desc">@Tokyo, Japan</i>
+        </div>
+        <div id="info">
+            <h1>Thomas E. Huang</h1>
+            <h3><i>University of Michigan</i></h3>
+            <strong>Address</strong>: 2260 Hayward St., Ann Arbor, MI <br><br>
+            <strong>Email</strong>: thomaseh [at] umich [dot] edu <br><br>
+            <ul id="links_list">
+                <li><a href="https://www.linkedin.com/in/thomaseh/" target="_blank"><img height="16" width="16" src="static/icons/linkedin.svg" /></a></li>
+                <li><a href="https://github.com/thomasehuang" target="_blank"><img height="16" width="16" src="static/icons/github.svg" /></a></li>
+                <li><a href="https://scholar.google.com/citations?user=7wuq-7AAAAAJ&hl=en" target="_blank"><img height="16" width="16" src="static/icons/google.svg" /></a></li>
+                <!-- [<a href="https://www.linkedin.com/in/thomaseh/" target="_blank">LinkedIn</a>]
+                [<a href="https://github.com/thomasehuang" target="_blank">GitHub</a>]
+                [<a href="https://scholar.google.com/citations?user=7wuq-7AAAAAJ&hl=en" target="_blank">Google Scholar</a>] -->
+                |
+                <li><a href="static/resume.pdf" target="_blank">Curriculum Vitae</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- <hr> -->
+
+    <div id="about">
+        <h2 class="title">About Me</h2>
+        <div class="norm">
+            Hello! My name is <strong>Thomas E. Huang</strong>. I am a first-year PhD student in the <a href="https://www.eecs.umich.edu/" target="_blank">EECS department</a> at the <a href="https://umich.edu/" target="_blank">University of Michigan</a>. My advisor is Professor <a href="http://web.eecs.umich.edu/~honglak/" target="_blank">Honglak Lee</a>. My <span id="r">r</span>esearch interests are deep learning and its <span id="a">a</span>pplication to <span id="c">c</span>omputer vision.
+        </div>
+       <hr>
+    </div>
+
+    <div>
+        <button id="pub_but">Publications</button>
+        <button id="exp_but">Experience</button>
+        <button id="tae_but">Teaching & Education</button>
+        <button id="award_but">Awards</button>
+        <button id="proj_but">Projects</button>
+        <button id="misc_but">Misc</button>
+    </div>
+
+    <div id="tab_details">Click on the tabs for more details</div>
+
+    <div id='pub'>
+        <h2 class="title" id="pub_title">Publications</h2>
+            <div class="card">
+                <img src="static/TFA_fig1.png" alt="TFA" style="height: 125px; width: 233px; float: left; margin-right: 10px;">
+                <div>
+                    <heading>Frustratingly Simple Few-Shot Object Detection</heading>
+                    <div>
+                        Xin Wang*, <b>Thomas E. Huang</b>*, Trevor Darrell, Joseph E. Gonzalez, Fisher Yu
+                    </div>
+                    <div>
+                        <i>International Conference on Machine Learning (ICML)</i>, 2020
+                    </div>
+                    <div>
+                        [<a href="https://arxiv.org/abs/2003.06957" target="_blank">arxiv</a>] [<a href="https://github.com/ucbdrive/few-shot-object-detection" target="_blank">code</a>]
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <img src="static/hsim_results.png" alt="HSIM" style="height: 125px; float: left; margin-right: 10px;">
+                <div>
+                    <heading>Learning Hierarchical Semantic Image Manipulation through Structured Representations</heading>
+                    <div>
+                        Seunghoon Hong, Xinchen Yan, <b>Thomas Huang</b>, Honglak Lee
+                    </div>
+                    <div>
+                        <i>Advances in Neural Information Processing Systems (NeurIPS)</i>, Montreal, Canada, 2018
+                    </div>
+                    <div>
+                        [<a href="https://arxiv.org/abs/1808.07535" target="_blank">arxiv</a>] [<a href="https://github.com/xcyan/neurips18_hierchical_image_manipulation" target="_blank">code</a>]
+                    </div>
+                </div>
+            </div>
+        <hr>
+    </div>
+
+    <div id='res_exp'>
+        <h2 class="title">Research Experience</h2>
+        <div class="card">
+            <heading>AI Lab</heading> – University of Michigan <span class="date">Apr. 2018 – current</span>
+            <div>
+                Researcher
+            </div>
+            <!-- <div class="card_body hide_on_all">
+                <br>
+                I am researching the application of deep learning to generation tasks, including image and music generation. Work done under <a href="http://web.eecs.umich.edu/~honglak/" target="_blank">Professor Honglak Lee</a>. Work partially done under the <a href="https://sure.engin.umich.edu/" target="_blank">SURE program</a>.
+            </div> -->
+        </div>
+        <div class="card">
+            <heading>Berkeley DeepDrive (BDD) Lab</heading> – University of California, Berkeley <span class="date">Jun. 2019 – Sep. 2019</span>
+            <div>
+                Research Intern
+            </div>
+        </div>
+        <div class="card">
+            <heading>ARM Lab</heading> – University of Michigan <span class="date">Jan. 2018 – Apr. 2018</span>
+            <div>
+                Research Assistant
+            </div>
+            <!-- <div class="card_body hide_on_all">
+                <br>
+                I researched the use of deep learning models for 3D shape completion from a single depth view, which has important applications in robotics. Work done under <a href="http://web.eecs.umich.edu/~dmitryb/" target="_blank">Professor Dmitry Berenson</a> at the <a href="http://arm.eecs.umich.edu/" target="_blank">Autonomous Robotic Manipulation</a> (ARM) Lab.
+            </div> -->
+        </div>
+        <hr>
+    </div>
+
+    <div id='teach'>
+        <h2 class="title">Teaching</h2>
+        <div class="card">
+            <heading>EECS 445: Intro. to Machine Learning</heading> – University of Michigan <span class="date">Jan. 2018 – Apr. 2019</span>
+            <div>
+                Instructional Aide (2 semesters), Head Instructional Aide (1 semester)
+            </div>
+            <div class="card_body hide_on_all">
+                <br>
+                I taught fundamental machine learning concepts, including linear classifiers, support vector machines, decision trees, bagging and boosting, neural networks, deep learning, clustering, collaborative filtering, and graphical models.
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div id='ed'>
+        <h2 class="title">Education</h2>
+        <div class="card">
+            <heading>University of Michigan</heading> – Ann Arbor, Michigan <span class="date">Sep. 2019 – Apr. 2024 (expected)</span>
+            <div>
+                Ph.D. in Computer Science and Engineering
+            </div>
+            <div class="card_body hide_on_all">
+                <br>
+                Relevant coursework: Advanced Artificial Intelligence, Ecological Approach to Visual Perception.
+            </div>
+        </div>
+        <div class="card">
+            <heading>University of Michigan</heading> – Ann Arbor, Michigan <span class="date">Sep. 2015 – Apr. 2019</span>
+            <div>
+                <span id="b">B</span>achelor of Engineering in Computer Science and Data Science
+            </div>
+            <div class="card_body hide_on_all">
+                <br>
+                Cumulative GPA: 3.99, Major GPA: 4.0 <br>
+                Relevant coursework: Machine Learning, Reinforcement Learning, Computer Vision, Artificial Intelligence, Natural Language Processing, Data Mining, Algorithmic Robotics, Web Systems, Operating Systems.<br><br>
+                Honors and Awards: <a href="https://studentawards.engin.umich.edu/deanslist/" target="_blank">Dean's Honor List</a> (Fall '15, Winter & Fall '16, Fall '17, Winter '18), <a href="http://honors.umich.edu/awards.php" target="_blank">University Honors</a> (Winter '16, Fall '17, Winter '18), <a href="http://honors.umich.edu/awards.php" target="_blank">James B. Angell Scholar</a> ('18)
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div id='award'>
+        <h2 class="title">Honors and Awards</h2>
+        <div class="card">
+            <div>
+                <ul id='award_list'>
+                    <li><strong>NSF Graduate Research Fellowship Honorable Mention</strong>, 2018</li>
+                    <li><strong>Richard H. Orenstein Fellowship (in Memory of Murray Orenstein)</strong>, 2019
+                        <ul class="hide_on_all">
+                            <li>Endowed in memory of Murray Orenstein in 1979 by Richard H. Orenstein (BS '62), Sarasota, Florida</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Below are not shown by default -->
+
+    <div id='proj'>
+        <h2 class="title">Projects</h2>
+        <div class="card">
+            <heading>ICLR 2018 Reproducibility Challenge</heading> <span class="date">Sep. 2017 – Dec. 2017</span>
+            <div>
+                Final Project for EECS 498: Reinforcement Learning at the University of Michigan
+            </div>
+            <br>
+            <div class="card_body">
+                For <a href="https://www.cs.mcgill.ca/~jpineau/ICLR2018-ReproducibilityChallenge.html" target="_blank">this challenge</a>, we aimed to reproduce the results from the paper <i>Curiosity-driven Exploration by Bootstrapping Features</i>. Our implementation and report can be found <a href="https://github.com/thomasehuang/Reproducing-Curiosity-Driven-Exploration-By-Bootstrapping-Features" target="_blank">here</a>.
+            </div>
+        </div>
+        <div class="card">
+            <heading>Front-end Collision Prevention System</heading> <span class="date">Sep. 2017 – Dec. 2017</span>
+            <div>
+                Final Project for EECS 442: Computer Vision at the University of Michigan
+            </div>
+            <br>
+            <div class="card_body">
+                My team created a system to be incorporated into dash cameras to automatically detect cars suddenly breaking/slowing down in front. For the detection of cars, we used the <a href="https://arxiv.org/abs/1512.02325" target="_blank">Single Shot MultiBox Detector</a> (SSD) with pre-trained weights on the VOC2007 dataset. For detecting break lights, we used a sequence of HSL thresholding, morphological closure, and blob detection. A combination of both detections are used to determine whether the cars in front are suddenly breaking/slowing down. The results of our system can be found <a href="https://youtu.be/kxjSe9UHx4Q" target="_blank">here</a> and <a href="https://youtu.be/7a4Xlpptc1A" target="_blank">here</a>. The color of the bounding box indicate the detection result. The final report can be found <a href="static/442_report.pdf" target="_blank">here</a>.
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div id='prof_exp'>
+        <h2 class="title">Professional Experience</h2>
+        <div class="card">
+            <heading>Salesforce</heading> – San Francisco, California <span class="date">May. 2017 – Aug. 2017</span>
+            <div>
+                Frontier Scale Software Engineering Intern
+            </div>
+            <br>
+            <!-- <div class="card_body">
+                I worked with a team to pioneer the integration of a third-party software with Salesforce’s Platform using Python and Javascript. I presented the product to C-level executives of a corporate client.
+            </div> -->
+        </div>
+        <hr>
+    </div>
+
+    <div id='xtra'>
+        <h2 class="title">Extracurriculars</h2>
+        <div class="card">
+            <heading>UM::Autonomy</heading> – University of Michigan <span class="date">Sep. 2015 – Sep. 2018</span>
+            <div>
+                Lead for the AI subteam (2016 – 2018)
+            </div>
+            <br>
+            <div class="card_body">
+                Our team designs and builds an autonomous, robotic boat every year to compete in the <a href="https://www.auvsifoundation.org/competition/roboboat">International RoboBoat Competition</a>, which is composed of several challenges. Our team also composes a research journal paper/technical design report each year, which can be found here (<a href="static/uma_2016.pdf" target="_blank">2016</a>, <a href="static/uma_2017.pdf" target="_blank">2017</a>). For two years, I was the lead of the AI subteam, which is in charge of the software and algorithms used by the boat. I supervised various tasks, such as data collection, object detection, and control systems.
+            </div>
+        </div>
+        <div class="card">
+            <heading>Eta Kappa Nu, EECS Honor Society</heading> – University of Michigan <span class="date">Sep. 2016 – Apr. 2019</span>
+            <div>
+                Member
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div id='conf'>
+        <h2 class="title">Conferences</h2>
+        <div class="card">
+            <heading>NeurIPS 2018</heading> – Montreal, Canada <span class="date">Dec 3, 2018 – Dec 8, 2018</span>
+            <div>
+                Poster Session
+            </div>
+            <br>
+            <div class="card_body">
+                I presented our paper, <i>Learning Hierarchical Semantic Image Manipulation through Structured Representations</i>, at the poster session (<a href="neurips2018.html">pictures</a>).
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div id='read'>
+        <h2 class="title">Readings</h2>
+        <div class="norm">
+            An outdated list of papers that I read for research/projects, which can be found <a href="https://github.com/thomasehuang/ML-Paper-Notes">here</a>.
+        </div>
+        <hr>
+    </div>
+
+    <!-- <hr> -->
+
+    <div id="footer">
+        <i>Website best viewed on a computer.</i>
+    </div>
+</body>
 </html>
