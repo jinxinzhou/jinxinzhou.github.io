@@ -1,0 +1,135 @@
+html {
+    background: #fafafa;
+}
+body {
+    background: white;
+    box-shadow: 0 0 5px #ccc;
+    font-family: Helvetica Neue, Arial, Verdana;
+    padding: 20px 50px;
+    font-size: 16px;
+    margin: auto;
+    max-width: 800px;
+}
+heading {
+    font-weight: bold;
+    font-size: 18px;
+}
+button {
+    border-radius: 5px;
+    font-family: Arial, Verdana, Helvetica;
+    font-size: 18px;
+    margin: 2px 2px 0px 2px;
+    padding: 5px 18px 5px 18px;
+    background-color: none;
+    outline: none;
+    cursor: pointer;
+}
+button:hover {
+    background: FloralWhite;
+}
+#info {
+    display: inline-block;
+    vertical-align: top;
+}
+#info a {
+    margin: 0 5px;
+    line-height: 16px;
+}
+#info img {
+    vertical-align: text-top;
+}
+#links_list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#links_list li {
+    display: inline-block;
+    vertical-align: top;
+}
+.title {
+    margin: 25px 0;
+    margin-bottom: 15px;
+}
+#pub_title {
+    margin: 5px 0 15px 0;
+    margin-bottom: 15px;
+}
+#footer {
+    margin-top: 50px;
+    font-size: 14px;
+}
+#pic {
+    border-radius: 50%;
+    max-width:100%;
+    max-height:100%;
+}
+#pic_desc {
+    margin-top: 10px;
+    float: right;
+    font-size: 12px;
+}
+#pic_div {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    margin-right: 10px;
+}
+#about {
+    margin-top: 30px;
+}
+#award_list {
+    padding-left: 15px;
+}
+.norm {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+#tab_details {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 15px;
+    text-align: center;
+}
+.card {
+    background-color: none;
+    /*margin-top: 35px;*/
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.card_body {
+    margin-left: 15px;
+}
+.hide_on_all {
+    display: none;
+}
+.date {
+    float: right;
+    color: gray;
+    font-style: italic;
+}
+.pressed {
+    background-color: FloralWhite;
+}
+
+/*
+by default, some blocks are not shown
+*/
+#proj {
+    display: none;
+}
+#prof_exp {
+    display: none;
+}
+#xtra {
+    display: none;
+}
+#conf {
+    display: none;
+}
+#read {
+    display: none;
+}
+/**/
