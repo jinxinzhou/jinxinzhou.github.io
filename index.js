@@ -1,7 +1,7 @@
 window.onload = function() {
     var exp_down = false
     var pub_down = false
-    var tae_down = false
+    var ed_down = false
     var award_down = false
 
 
@@ -10,7 +10,7 @@ window.onload = function() {
         if (button === "exp") {
             exp_down = !exp_down
             pub_down = false
-            tae_down = false
+            ed_down = false
             award_down = false
    
             if (!exp_down) {
@@ -24,7 +24,7 @@ window.onload = function() {
         } else if (button == "pub") {
             pub_down = !pub_down
             exp_down = false
-            tae_down = false
+            ed_down = false
             award_down = false
 
             if (!pub_down) {
@@ -36,24 +36,24 @@ window.onload = function() {
                 document.getElementById("pub_but").classList.add("pressed")
             }
         } else if (button === "tae") {
-            tae_down = !tae_down
+            ed_down = !ed_down
             exp_down = false
             pub_down = false
             award_down = false
 
-            if (!tae_down) {
+            if (!ed_down) {
                 showAll()
-                document.getElementById("tae_but").classList.remove("pressed")
+                document.getElementById("ed_but").classList.remove("pressed")
             } else {
                 document.getElementById("ed").style.display = "block"
                 removeButton()
-                document.getElementById("tae_but").classList.add("pressed")
+                document.getElementById("ed_but").classList.add("pressed")
             }
         } else if (button === "award") {
             award_down = !award_down
             exp_down = false
             pub_down = false
-            tae_down = false
+            ed_down = false
 
             if (!award_down) {
                 showAll()
@@ -73,7 +73,7 @@ window.onload = function() {
         dispButton('exp');
     }
     document.getElementById("tae_but").onclick = function() {
-        dispButton('tae');
+        dispButton('ed');
     }
     document.getElementById("award_but").onclick = function() {
         dispButton('award');
@@ -105,7 +105,7 @@ window.onload = function() {
     function removeButton() {
         document.getElementById("exp_but").classList.remove("pressed")
         document.getElementById("pub_but").classList.remove("pressed")
-        document.getElementById("tae_but").classList.remove("pressed")
+        document.getElementById("ed_but").classList.remove("pressed")
         document.getElementById("award_but").classList.remove("pressed")
 
         var cards = document.getElementsByClassName("hide_on_all")
