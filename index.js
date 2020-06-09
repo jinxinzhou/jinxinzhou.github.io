@@ -72,7 +72,7 @@ window.onload = function() {
     document.getElementById("exp_but").onclick = function() {
         dispButton('exp');
     }
-    document.getElementById("tae_but").onclick = function() {
+    document.getElementById("ed_but").onclick = function() {
         dispButton('ed');
     }
     document.getElementById("award_but").onclick = function() {
