@@ -1,6 +1,6 @@
 window.onload = function() {
-    var pub_down = false
     var exp_down = false
+    var pub_down = false
     var tae_down = false
     var award_down = false
     var proj_down = false
@@ -20,7 +20,6 @@ window.onload = function() {
                 document.getElementById("exp_but").classList.remove("pressed")
             } else {
                 document.getElementById("res_exp").style.display = "block"
-                document.getElementById("prof_exp").style.display = "block"
                 removeButton()
                 document.getElementById("exp_but").classList.add("pressed")
             }
@@ -50,7 +49,6 @@ window.onload = function() {
                 showAll()
                 document.getElementById("tae_but").classList.remove("pressed")
             } else {
-                document.getElementById("teach").style.display = "block"
                 document.getElementById("ed").style.display = "block"
                 removeButton()
                 document.getElementById("tae_but").classList.add("pressed")
@@ -70,39 +68,7 @@ window.onload = function() {
                 removeButton()
                 document.getElementById("award_but").classList.add("pressed")
             }
-        } else if (button === "proj") {
-            proj_down = !proj_down
-            exp_down = false
-            pub_down = false
-            tae_down = false
-            award_down = false
-            misc_down = false
-            if (!proj_down) {
-                showAll()
-                document.getElementById("proj_but").classList.remove("pressed")
-            } else {
-                document.getElementById("proj").style.display = "block"
-                removeButton()
-                document.getElementById("proj_but").classList.add("pressed")
-            }
-        } else if (button === "misc") {
-            misc_down = !misc_down
-            exp_down = false
-            pub_down = false
-            tae_down = false
-            award_down = false
-            proj_down = false
-            if (!misc_down) {
-                showAll()
-                document.getElementById("misc_but").classList.remove("pressed")
-            } else {
-                document.getElementById("xtra").style.display = "block"
-                document.getElementById("conf").style.display = "block"
-                document.getElementById("read").style.display = "block"
-                removeButton()
-                document.getElementById("misc_but").classList.add("pressed")
-            }
-        }
+        }  
     }
 
     document.getElementById("pub_but").onclick = function() {
@@ -117,17 +83,11 @@ window.onload = function() {
     document.getElementById("award_but").onclick = function() {
         dispButton('award');
     }
-    document.getElementById("proj_but").onclick = function() {
-        dispButton('proj');
-    }
-    document.getElementById("misc_but").onclick = function() {
-        dispButton('misc');
-    }
+
 
     function showAll() {
         document.getElementById("res_exp").style.display = "block"
         document.getElementById("pub").style.display = "block"
-        document.getElementById("teach").style.display = "block"
         document.getElementById("ed").style.display = "block"
         document.getElementById("award").style.display = "block"
 
