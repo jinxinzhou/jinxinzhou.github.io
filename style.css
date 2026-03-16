@@ -1,0 +1,473 @@
+/* ========================================
+   Jinxin Zhou - Personal Website Styles
+   Modeled after tianyuding.com
+   ======================================== */
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.4;
+  color: #333;
+  scroll-behavior: smooth;
+  background-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #527bbd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2a4a8c;
+}
+
+/* ========================================
+   Navigation Bar
+   ======================================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 15px 0;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #527bbd;
+  text-decoration: none;
+}
+
+.nav-logo:hover {
+  color: #2a4a8c;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 0.9em;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #527bbd;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #527bbd;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ========================================
+   Main Content Layout
+   ======================================== */
+#layout-content {
+  max-width: 960px;
+  margin: 25px auto 0;
+  padding: 0 20px;
+}
+
+/* ========================================
+   Profile Section
+   ======================================== */
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 1.5em;
+}
+
+.profile-info {
+  flex: 2;
+}
+
+.profile-info h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+  color: #333;
+}
+
+.profile-info h3 {
+  font-size: 1.1em;
+  color: #555;
+  font-weight: normal;
+  margin-bottom: 0.8em;
+}
+
+.profile-info p {
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+  color: #444;
+}
+
+.profile-image {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-photo {
+  max-width: 270px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.03);
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-link {
+  color: #527bbd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #2a4a8c;
+  border-bottom: 1px solid;
+}
+
+/* ========================================
+   Section Headings
+   ======================================== */
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #eaeaea;
+  color: #333;
+  font-size: 1.4em;
+}
+
+/* ========================================
+   Biography
+   ======================================== */
+.bio-text p {
+  margin-bottom: 0.8em;
+  line-height: 1.5;
+}
+
+/* ========================================
+   Education & Experience Lists
+   ======================================== */
+.info-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-list li {
+  margin-bottom: 1em;
+  padding: 10px 12px;
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+  line-height: 1.4;
+}
+
+.info-list li:hover {
+  background: linear-gradient(to right, #f0f5ff, #fafcff);
+  transform: translateX(3px);
+  border-left: 3px solid #b8d0ff;
+  padding-left: 9px;
+  box-shadow: 0 2px 8px rgba(66, 133, 244, 0.05);
+}
+
+.info-list .institution {
+  font-weight: bold;
+  color: #2a4a8c;
+}
+
+.info-list .location {
+  color: #777;
+  float: right;
+}
+
+.info-list .degree {
+  display: block;
+  margin-top: 2px;
+  color: #444;
+}
+
+.info-list .date {
+  color: #888;
+  font-style: italic;
+  float: right;
+}
+
+/* ========================================
+   Publication & Preprint Lists
+   ======================================== */
+.pub-list {
+  padding-left: 25px;
+  counter-reset: none;
+}
+
+.pub-list li {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border-bottom: 1px dotted #eaeaea;
+  transition: all 0.2s ease-out;
+  line-height: 1.3;
+}
+
+.pub-list li:hover {
+  background: linear-gradient(to right, #f0f5ff, #fafcff);
+  border-left: 5px solid #b8d0ff;
+  box-shadow: 0 5px 15px rgba(66, 133, 244, 0.07);
+  transform: translateX(5px);
+  padding: 8px;
+  margin-left: -8px;
+}
+
+.pub-list li a:first-of-type {
+  font-weight: 500;
+  color: #2a4a8c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.pub-list li a:first-of-type:hover {
+  color: #3498DB;
+  text-decoration: underline;
+}
+
+.pub-venue {
+  color: #E74C3C;
+  display: inline;
+}
+
+.pub-authors {
+  display: block;
+  margin-top: 3px;
+  line-height: 1.2;
+}
+
+/* ========================================
+   Buttons (pdf, code, arXiv, etc.)
+   ======================================== */
+.button {
+  font-family: Georgia, serif;
+  background-color: #D6EAF8;
+  border: none;
+  color: #022b6d;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.88em;
+  margin: 2px 2px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #AED6F1;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.button a {
+  color: #022b6d;
+  text-decoration: none !important;
+}
+
+.button:hover a {
+  text-decoration: none !important;
+}
+
+.button3 {
+  background-color: #F1948A;
+  color: white;
+}
+
+.button3:hover {
+  background-color: #E74C3C;
+}
+
+.button4 {
+  background-color: #D6EAF8;
+  font-size: 0.85em;
+}
+
+.button4:hover {
+  background-color: #AED6F1;
+}
+
+.button5 {
+  background-color: #5DADE2;
+  color: white;
+}
+
+.button5:hover {
+  background-color: #3498DB;
+}
+
+/* ========================================
+   Services & Plain Lists
+   ======================================== */
+.plain-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.plain-list li {
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.plain-list li:hover {
+  background: linear-gradient(to right, #f0f5ff, #fafcff);
+  border-left: 3px solid #b8d0ff;
+  transform: translateX(3px);
+  box-shadow: 0 2px 8px rgba(66, 133, 244, 0.05);
+}
+
+.plain-list li a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.plain-list li a:hover {
+  color: #527bbd;
+  border-bottom: 1px dotted #527bbd;
+}
+
+/* ========================================
+   Visitor Map & Counter
+   ======================================== */
+.visitor-section {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+#clustrmaps-container {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.visit-counter {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.visit-counter img {
+  height: 24px;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+.footer {
+  margin-top: 30px;
+  padding: 15px 0;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profile-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .profile-image {
+    margin-bottom: 20px;
+  }
+
+  .info-list .location,
+  .info-list .date {
+    float: none;
+    display: block;
+  }
+}
+
+/* ========================================
+   Utility
+   ======================================== */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+sup {
+  font-size: 0.75em;
+}

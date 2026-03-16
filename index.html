@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jinxin Zhou's Homepage">
+    <title>Jinxin Zhou</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">Jinxin Zhou</a>
+        <div class="nav-links">
+            <a href="#bio">Biography</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#publications">Publications</a>
+            <a href="#preprints">Preprints</a>
+            <a href="#services">Services</a>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div id="layout-content">
+
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <div class="profile-info">
+            <h1>Jinxin Zhou</h1>
+            <h3>Ph.D. Candidate in Computer Science and Engineering</h3>
+            <p>
+                <a href="https://cse.osu.edu/">Department of Computer Science and Engineering</a><br>
+                <a href="https://www.osu.edu/">The Ohio State University</a><br>
+                Columbus, Ohio, USA<br>
+                <br>
+                Email: zhou.3820 [At] osu [Dot] edu<br>
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/jinxinzhou" class="social-link">GitHub</a> |
+                <a href="https://scholar.google.com/citations?user=XR5CQJcAAAAJ&hl=en" class="social-link">Google Scholar</a> |
+                <a href="Jinxin_CV.pdf" class="social-link">CV</a>
+            </div>
+        </div>
+        <div class="profile-image">
+            <!-- Replace photo.jpg with your actual photo -->
+            <img src="photo.jpg" alt="Jinxin Zhou" class="profile-photo"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;width:220px;height:270px;background:#e8f0fe;border-radius:5px;display:flex;align-items:center;justify-content:center;color:#527bbd;font-size:1.2em;margin:0 auto;&quot;>Photo</div>';">
+        </div>
+    </div>
+
+    <!-- Biography -->
+    <h2 id="bio">Biography</h2>
+    <div class="bio-text">
+        <p>
+            I am a Ph.D. candidate in the <a href="https://cse.osu.edu/">Department of Computer Science and Engineering</a>
+            at <a href="https://www.osu.edu/">The Ohio State University (OSU)</a>,
+            advised by <a href="https://zhihuizhu.github.io/">Prof. Zhihui Zhu</a>.
+            I received my Master's degree in
+            Electrical Engineering and Computer Science from the <a href="https://umich.edu/">University of Michigan, Ann Arbor</a>
+            in 2021, and my Bachelor's degree in Electrical Engineering and Automation from
+            <a href="https://www.hust.edu.cn/">Huazhong University of Science and Technology (HUST)</a> in 2019.
+        </p>
+        <p>
+            My research interests broadly lie in deep learning theory and computer vision.
+            In particular, I have been working on understanding the optimization and generalization of deep neural networks,
+            with a focus on topics such as Neural Collapse, diffusion models, and vision-language models.
+        </p>
+    </div>
+
+    <!-- Education -->
+    <h2 id="education">Education</h2>
+    <ul class="info-list">
+        <li>
+            <span class="institution">Ohio State University (OSU)</span>
+            <span class="location">Columbus, OH</span><br>
+            <span class="degree">Doctor of Philosophy in Computer Science and Engineering</span>
+            <span class="date">Aug. 2022 – Present</span>
+        </li>
+        <li>
+            <span class="institution">University of Michigan (UMich)</span>
+            <span class="location">Ann Arbor, MI</span><br>
+            <span class="degree">Master of Science in Electrical Engineering and Computer Science</span>
+            <span class="date">Aug. 2019 – May 2021</span>
+        </li>
+        <li>
+            <span class="institution">Huazhong University of Science and Technology (HUST)</span>
+            <span class="location">Wuhan, China</span><br>
+            <span class="degree">Bachelor of Science in Electrical Engineering and Automation</span>
+            <span class="date">Sep. 2015 – June 2019</span>
+        </li>
+    </ul>
+
+    <!-- Experience -->
+    <h2 id="experience">Experience</h2>
+    <ul class="info-list">
+        <li>
+            <span class="institution">Senior Researcher</span>
+            <span class="location">@ <a href="https://www.microsoft.com/">Microsoft</a>, Redmond, WA</span>
+            <span class="date">Feb. 2026 – Present</span>
+        </li>
+        <li>
+            <span class="institution">Machine Learning Engineer Intern</span>
+            <span class="location">@ <a href="https://www.adobe.com/">Adobe</a>, San Jose, CA</span>
+            <span class="date">May 2024 – Aug. 2024</span>
+        </li>
+        <li>
+            <span class="institution">Research Intern</span>
+            <span class="location">@ <a href="https://www.microsoft.com/">Microsoft</a>, Redmond, WA</span>
+            <span class="date">May 2023 – Aug. 2023</span>
+        </li>
+        <li>
+            <span class="institution">Research Assistant</span>
+            <span class="location">@ <a href="https://www.osu.edu/">Ohio State University</a>, Columbus, OH</span>
+            <span class="date">Aug. 2022 – Present</span>
+        </li>
+        <li>
+            <span class="institution">Research Assistant</span>
+            <span class="location">@ <a href="https://umich.edu/">University of Michigan</a>, Ann Arbor, MI</span>
+            <span class="date">Jan. 2020 – Dec. 2020</span>
+        </li>
+    </ul>
+
+    <!-- Publications -->
+    <h2 id="publications">Selected Publications</h2>
+    <p style="margin-bottom:0.5em;"><sup>*</sup> indicates equal contribution</p>
+    <ol reversed class="pub-list">
+        <li>
+            <a href="https://arxiv.org/abs/2510.23894">Improving Visual Discriminability of CLIP for Training-Free Open-Vocabulary Semantic Segmentation</a><br>
+            <span class="pub-authors"><strong>Jinxin Zhou</strong>, Jiachen Jiang, and Zhihui Zhu</span><br>
+            <span class="pub-venue"><strong>TMLR</strong>, 2026</span><br>
+        </li>
+        <li>
+            <a href="https://arxiv.org/abs/2505.17316">Analyzing Fine-Grained Alignment and Enhancing Vision Understanding in Multimodal Language Models</a><br>
+            <span class="pub-authors">Jiachen Jiang, <strong>Jinxin Zhou</strong>, Bo Peng, Xia Ning, and Zhihui Zhu</span><br>
+            <span class="pub-venue"><strong>NeurIPS</strong>, 2025</span> <button class="button button3">AC rate = 24.5%</button><br>
+        </li>
+        <li>
+            <a href="https://openreview.net/forum?id=vVxeFSR4fU">On Layer-wise Representation Similarity: Application for Multi-Exit Models with a Single Classifier</a><br>
+            <span class="pub-authors">Jiachen Jiang, <strong>Jinxin Zhou</strong>, Zhihui Zhu</span><br>
+            <span class="pub-venue"><strong>ICLR</strong>, 2025</span> <button class="button button3">AC rate = 32%</button><br>
+        </li>
+        <li>
+            <a href="https://openreview.net/forum?id=oyQnduevQw">A Validation Approach to Over-parameterized Matrix and Image Recovery</a><br>
+            <span class="pub-authors">Lijun Ding, Zhen Qin, Liwei Jiang, <strong>Jinxin Zhou</strong>, and Zhihui Zhu</span><br>
+            <span class="pub-venue"><strong>CPAL</strong>, 2025</span><br>
+        </li>
+        <li>
+            <a href="https://proceedings.mlr.press/v280/zhou25a.html">Are All Layers Created Equal: A Neural Collapse Perspective</a><br>
+            <span class="pub-authors"><strong>Jinxin Zhou</strong>, Jiachen Jiang, and Zhihui Zhu</span><br>
+            <span class="pub-venue"><strong>CPAL</strong>, 2025</span><br>
+        </li>
+        <li>
+            <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhou_DREAM_Diffusion_Rectification_and_Estimation-Adaptive_Models_CVPR_2024_paper.html">DREAM: Diffusion Rectification and Estimation-Adaptive Models</a><br>
+            <span class="pub-authors"><strong>Jinxin Zhou</strong><sup>*</sup>, Tianyu Ding<sup>*</sup>, Tianyi Chen, Jiachen Jiang, Ilya Zharkov, Zhihui Zhu, and Luming Liang</span><br>
+            <span class="pub-venue"><strong>CVPR</strong>, 2024</span> <button class="button button3">AC rate = 23.6%</button><br>
+            <button class="button button4"><a href="http://tianyuding.com/papers/dream-cvpr24.pdf">pdf</a></button>
+            <button class="button button4"><a href="https://github.com/jinxinzhou/DREAM">code</a></button>
+            <button class="button button4"><a href="https://arxiv.org/abs/2312.00210">arXiv</a></button>
+            <button class="button button4"><a href="https://www.tianyuding.com/projects/DREAM/">project page</a></button>
+        </li>
+        <li>
+            <a href="https://proceedings.mlr.press/v235/jiang24i.html">Generalized Neural Collapse for A Large Number of Classes</a><br>
+            <span class="pub-authors">Jiachen Jiang<sup>*</sup>, <strong>Jinxin Zhou</strong><sup>*</sup>, Peng Wang, Qing Qu, Dustin Mixon, Chong You, and Zhihui Zhu</span><br>
+            <span class="pub-venue"><strong>ICML</strong>, 2024</span> <button class="button button3">AC rate = 27.5%</button><br>
+        </li>
+        <li>
+            <a href="https://openreview.net/forum?id=o8r84MzTQB">Principled and Efficient Transfer Learning of Deep Models via Neural Collapse</a><br>
+            <span class="pub-authors">Xiao Li, Sheng Liu, <strong>Jinxin Zhou</strong>, Xinyu Lu, Fernandez-Granda Carlos, Zhihui Zhu, and Qing Qu</span><br>
+            <span class="pub-venue"><strong>TMLR</strong>, 2023</span><br>
+        </li>
+        <li>
+            <a href="https://papers.nips.cc/paper_files/paper/2022/hash/cdce17de141c9fba3bdf175a0b721941-Abstract-Conference.html">Are All Losses Created Equal: A Neural Collapse Perspective</a><br>
+            <span class="pub-authors"><strong>Jinxin Zhou</strong>, Chong You, Xiao Li, Kangning Liu, Sheng Liu, Qing Qu, and Zhihui Zhu</span><br>
+            <span class="pub-venue"><strong>NeurIPS</strong>, 2022</span> <button class="button button3">AC rate = 25.6%</button><br>
+        </li>
+        <li>
+            <a href="https://proceedings.mlr.press/v162/zhou22c.html">On the Optimization Landscape of Neural Collapse under MSE Loss: Global Optimality with Unconstrained Features</a><br>
+            <span class="pub-authors"><strong>Jinxin Zhou</strong><sup>*</sup>, Xiao Li<sup>*</sup>, Tianyu Ding, Chong You, Qing Qu, and Zhihui Zhu</span><br>
+            <span class="pub-venue"><strong>ICML</strong>, 2022</span> <button class="button button3">AC rate = 21.9%</button><br>
+            <button class="button button4"><a href="http://tianyuding.com/papers/zhou22c.pdf">pdf</a></button>
+            <button class="button button4"><a href="https://github.com/jinxinzhou/neural-collapse-MSE">code</a></button>
+            <button class="button button4"><a href="https://arxiv.org/abs/2203.01238">arXiv</a></button>
+        </li>
+        <li>
+            <a href="https://proceedings.neurips.cc/paper/2021/hash/f92586a25bb3145facd64ab20fd554ff-Abstract.html">A Geometric Analysis of Neural Collapse with Unconstrained Features</a>
+            <button class="button button5"><strong>Spotlight, top 3%</strong></button><br>
+            <span class="pub-authors">Zhihui Zhu<sup>*</sup>, Tianyu Ding<sup>*</sup>, <strong>Jinxin Zhou</strong>, Xiao Li, Chong You, Jeremias Sulam, and Qing Qu</span><br>
+            <span class="pub-venue"><strong>NeurIPS</strong>, 2021</span> <button class="button button3">AC rate = 25.7%</button><br>
+        </li>
+        <li>
+            <a href="https://doi.org/10.1117/12.2582041">Deep Learning Based Similarity-consistency Abnormality Detection (SCAD) Model for Classification of MRI Patterns of Multiple Myeloma Infiltration</a><br>
+            <span class="pub-authors"><strong>Jinxin Zhou</strong>, Chuan Zhou, Heang-Ping Chan, Lubomir M Hadjiiski, and Qian Dong</span><br>
+            <span class="pub-venue"><strong>SPIE Medical Imaging</strong>, 2021</span><br>
+        </li>
+    </ol>
+
+    <!-- Preprints -->
+    <h2 id="preprints">Selected Preprints</h2>
+    <ol reversed class="pub-list">
+        <li>
+            <a href="https://arxiv.org/abs/2506.05249">On the Convergence of Gradient Descent on Learning Transformers with Residual Connections</a><br>
+            <span class="pub-authors">Zhen Qin<sup>*</sup>, <strong>Jinxin Zhou</strong><sup>*</sup>, and Zhihui Zhu</span><br>
+            <span style="color:#888;">arXiv, 2025</span><br>
+        </li>
+        <li>
+            <a href="https://arxiv.org/abs/2505.17322">From Compression to Expansion: A Layerwise Analysis of In-Context Learning</a><br>
+            <span class="pub-authors">Jiachen Jiang, Yuxin Dong, <strong>Jinxin Zhou</strong>, and Zhihui Zhu</span><br>
+            <span style="color:#888;">arXiv, 2025</span><br>
+        </li>
+        <li>
+            <a href="#">D-STAR: Diffusion Model with Spatial-Temporal Adaptive Rectification</a><br>
+            <span class="pub-authors">Yong Ma, Luming Liang, Tianyu Ding, <strong>Jinxin Zhou</strong></span><br>
+            <span style="color:#888;">arXiv, 2025</span><br>
+        </li>
+        <li>
+            <a href="https://arxiv.org/abs/2503.17915">Cat-AIR: Content and Task-Aware All-in-One Image Restoration</a><br>
+            <span class="pub-authors">Jiachen Jiang, Tianyu Ding, Ke Zhang, <strong>Jinxin Zhou</strong>, Tianyi Chen, Ilya Zharkov, Zhihui Zhu, and Luming Liang</span><br>
+            <span style="color:#888;">arXiv:2503.17915, 2025</span><br>
+        </li>
+        <li>
+            <a href="https://arxiv.org/abs/2312.00678">The Efficiency Spectrum of Large Language Models: An Algorithmic Survey</a><br>
+            <span class="pub-authors">Tianyu Ding, Tianyi Chen, Haidong Zhu, Jiachen Jiang, Yiqi Zhong, <strong>Jinxin Zhou</strong>, Guangzhi Wang, Zhihui Zhu, Ilya Zharkov, and Luming Liang</span><br>
+            <span style="color:#888;">arXiv:2312.00678, 2023</span><br>
+        </li>
+        <li>
+            <a href="https://arxiv.org/abs/2404.08292">AdaContour: Adaptive Contour Descriptor with Hierarchical Representation</a><br>
+            <span class="pub-authors">Tianyu Ding, <strong>Jinxin Zhou</strong>, Tianyi Chen, Zhihui Zhu, Ilya Zharkov, and Luming Liang</span><br>
+            <span style="color:#888;">arXiv:2404.08292, 2024</span><br>
+        </li>
+    </ol>
+
+    <!-- Patents -->
+    <h2 id="patents">Patents</h2>
+    <ul class="plain-list">
+        <li>
+            <strong>Jinxin Zhou</strong>, Hui Qu, Saeid Mottian, Krishna Kumar Singh, and Ratheesh Kalarot,
+            <em>Boximotion: Still Images into Dynamic Videos with Bounding Box Control</em>,
+            Adobe, 2024. (Submitted)
+        </li>
+    </ul>
+
+    <!-- Services -->
+    <h2 id="services">Professional Services</h2>
+    <ul class="plain-list">
+        <li>
+            <strong>Conference Reviewer:</strong><br>
+            <a href="https://icml.cc">ICML</a> (2022–2025),
+            <a href="https://nips.cc">NeurIPS</a> (2023–2025),
+            <a href="https://iclr.cc">ICLR</a> (2022–2025),
+            <a href="http://cvpr.thecvf.com">CVPR</a> (2024–2025),
+            <a href="https://www.icassp2023.org">ICASSP</a> (2023)
+        </li>
+        <li>
+            <strong>Journal Reviewer:</strong><br>
+            <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">IEEE TPAMI</a>,
+            <a href="https://www.jmlr.org">JMLR</a>,
+            <a href="https://www.jmlr.org/tmlr/index.html">TMLR</a>
+        </li>
+    </ul>
+
+    <!-- Visitor Map & Counter -->
+    <h2 id="visitors">Visitors</h2>
+    <div class="visitor-section">
+        <!-- ClustrMaps Globe Widget -->
+        <div id="clustrmaps-container">
+            <!--
+                To activate: Register your site at https://clustrmaps.com/
+                and replace the script below with your personalized code.
+            -->
+            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=iW4mq7WzyURv3cOc80p3mN6FFWVPelbhNhAFW8NM3AE&cl=ffffff&w=a"></script>
+        </div>
+
+        <!-- Visit Counter -->
+        <div class="visit-counter">
+            <img src="https://visitor-badge.laobi.icu/badge?page_id=jinxinzhou.github.io" alt="visitor count">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Jinxin Zhou | <em>Last update: March 2026</em></p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
