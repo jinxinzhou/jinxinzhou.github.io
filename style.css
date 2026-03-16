@@ -224,7 +224,7 @@ h2 {
 
 .info-list .location {
   color: #777;
-  float: right;
+  margin-left: 10px;
 }
 
 .info-list .degree {
