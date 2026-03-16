@@ -228,7 +228,7 @@ h2 {
 }
 
 .info-list .degree {
-  display: block;
+  display: inline;
   margin-top: 2px;
   color: #444;
 }
